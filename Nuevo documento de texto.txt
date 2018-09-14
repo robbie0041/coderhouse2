@@ -1,0 +1,61 @@
+TRANFORMACIONES 
+
+una de las funciones que tiene, es darle animaciones al elemento. 
+
+transform te permite > 
+
+- trasladar 
+- rotar 
+- escalar
+
+para trasladar (translate) se mueve en eje  X and Y 
+
+ejemplo : transform:translate(45px,100px); 
+
+
+Rotate : nos permite rotar un elemento, y se escribe "deg"
+positivo para la derecha .. y negativo para la izquierda 
+
+ejemplo : transform: rotate(45deg)
+
+
+Scale : escalar es como hacerle zoom 
+
+puede recibir dos valores, uno por eje como trasladar 
+
+ejemplo : transform: scale(8.7);
+
+
+HOVER ES PARA CUANDO PASA EL MOUSE POR ARRIBA 
+
+----------------------
+
+Animaciones: 
+
+el armado de la animacion 
+ejecucion de la misma 
+
+el armado de la animacion es una linea de tiempo ... para eso tenemos que hacerlo con @keyframes
+
+ejemplo : 
+
+@keyframes mi_animacion {
+
+	0% {color:red;}
+	50%{color:green;}
+	100%{color:red;}
+}
+
+para aplicar la ejecucion, hay que usar animation. 
+
+animation-name
+animation-duration 
+"-iteration-count
+"-timing-function
+"-delay
+
+animation-name : decimos que animacion queremos que tome. 
+animation duration : es el tiempo que espesifica cuanto va a tardar por cada porcentaje 
+animation-iteration-count: las veces que queramos que se repita la animacion 
+animation-timing-function : para definir velocidades 
+animation-delay : cuanto va a esperar la animacion antes de arrancar 
